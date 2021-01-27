@@ -19,7 +19,7 @@
     "prepublish": "npm run build",
     "run": "npm run build && node ./dist/index.js",
     "test": "jest",
-    "test:cov": "nyc --clean npm run test",
+    "test:cov": "nyc --clean jest --coverage --coverageProvider=v8",
     "ci:lint": "eslint -c ./.eslintrc.js",
     "ci:tsc": "tsc --noEmit --project ./tsconfig.json"
   },
